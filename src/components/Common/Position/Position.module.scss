@@ -1,0 +1,158 @@
+.Position {
+  &:hover {
+    background: #f6f6f6;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+    .name {
+      display: inline-block;
+      width: fit-content;
+
+      .name-work {
+        width: 100%;
+        color: #212f3f;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        line-height: 1.5;
+        max-height: 4.5em;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+
+        &:hover {
+          color: #00b14f;
+        }
+      }
+
+      .name-cop {
+        color: #424e5c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .end-date {
+    position: absolute;
+    right: 6px;
+    bottom: -10px;
+    font-weight: 700;
+    color: #00b14f;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .description {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-height: 1.5;
+      max-height: 4.5em;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+    }
+
+    .tag-responsive,
+    .tag-responsive-hidden {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: rgba(0, 0, 0, 0.88);
+      font-size: 12px;
+      line-height: 20px;
+      list-style: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      display: inline-block;
+      height: auto;
+      margin-inline-end: 8px;
+      padding-inline: 7px;
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      opacity: 1;
+      transition: all 0.2s;
+      text-align: start;
+    }
+  }
+
+  .apply-btn {
+    &:hover {
+      border-color: unset !important;
+      opacity: 0.7;
+    }
+  }
+}
+
+/*Responsive*/
+@media only screen and (max-width: 720px) {
+  .tag-responsive,
+  .tag-responsive-hidden {
+    white-space: inherit !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .tag-responsive-hidden {
+    display: none !important;
+  }
+  .img-responsive {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .tags {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tag-responsive,
+  .tag-responsive-hidden {
+    margin: 0 2px !important;
+  }
+
+  .name {
+    width: 100% !important;
+  }
+
+  .name-work,
+  .name-cop {
+    text-align: center;
+  }
+
+  .end-date {
+    display: none;
+  }
+}

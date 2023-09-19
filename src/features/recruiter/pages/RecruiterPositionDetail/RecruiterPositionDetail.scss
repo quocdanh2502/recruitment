@@ -1,0 +1,46 @@
+
+.RecruiterPositionDetail{
+    display: flex;
+    padding:2rem 1rem;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    
+    h1{
+        color:blue;
+    }
+
+    .addBlackListMadal{
+        max-width: 750px;
+        max-height: 500px;
+        height:auto;
+    }
+    textarea{
+        resize: vertical;
+    }
+    .searchBar{
+        margin-bottom:10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 30px;
+        .searchButton{
+            background-color:blue;
+        }
+    }
+
+    .px-10 {
+        padding: 0 10px;
+    }
+    .ant-table-thead .ant-table-cell {
+        background-color: #cfe8e0;
+      }
+}
+.loading{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}

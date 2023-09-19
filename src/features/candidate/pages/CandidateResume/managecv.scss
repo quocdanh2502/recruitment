@@ -1,0 +1,58 @@
+.ManageCV {
+  margin: 2rem 4rem;
+
+  Table {
+    .ant-table-thead .ant-table-cell {
+      background-color: rgb(207, 232, 224);
+    }
+  }
+  .ManageResume {
+    border: none;
+    .ant-card-head {
+      font-size: 0.9rem;
+      padding: 12px 24px;
+      color: whitesmoke;
+      background: #20252a;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .ant-card-body {
+      padding: 0 0 1rem 0;
+      .ant-table {
+        border-radius: 0;
+        .ant-table-cell {
+          padding: 0.8rem 1.5rem !important;
+          .ant-btn {
+            border-radius: 100%;
+          }
+        }
+        table > thead > tr:first-child > *:first-child {
+          border-start-start-radius: 0px !important;
+        }
+
+        table > thead > tr:first-child > *:last-child {
+          border-start-end-radius: 0px !important;
+        }
+      }
+      .ant-pagination {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  .upload-crate-wrap {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  :where(.css-dev-only-do-not-override-12upa3x).ant-upload-wrapper
+    .ant-upload-list {
+    width: 121.6px;
+  }
+  :where(.css-dev-only-do-not-override-12upa3x).ant-upload-wrapper
+    .ant-upload-list
+    .ant-upload-list-item
+    .ant-upload-list-item-name {
+    padding: 0 0 0 2px;
+  }
+}

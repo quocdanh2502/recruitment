@@ -1,0 +1,97 @@
+.CandidatePositionDetail{
+    margin:1rem 0;
+    p,li{ 
+        margin: 0.25rem;
+    }
+    h4{
+        color:blue;
+        margin:1rem;
+    }
+    
+    .jobInformation{
+        padding-left:20px;
+    }
+    padding: 10px 0;
+    .moreInformation{
+        height:auto;
+        .companyCard{
+            width: 100rem;
+            background-image: linear-gradient(to right,#e99318,#ff6a06);
+            color: #fff;
+            border-color: #e99318!important;
+            opacity: .9;
+            .ant-card-head{
+                color: #fff;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        .relatedJobs{
+            width: 100rem;
+            svg {
+                fill:linear-gradient(to right,#e99318,#ff6a06);
+            }
+            display: flex;
+            flex-direction: column;
+            
+    }
+    }
+    .jobDetails{
+        padding-left: 20px;
+    }
+    
+    .leftBodyContainer{
+        min-width: 320px;
+        max-width: auto;
+    }
+    
+    .infoCompany{
+        height :auto;
+        padding:10px;
+        position: relative;
+    }   
+    .applyButton{
+        font-size: 16px;
+        box-shadow: inset;
+        width:100px;
+        right: 5rem!important;
+        .ant-float-btn-body{
+            background-color:#e99318;
+            
+            :hover{
+                color:#fff;
+    
+            }
+        }
+    }
+    
+    .jobInfo{
+        h2{
+            margin: 8px;
+        }
+        text-align: center;
+    }
+    
+    li{
+        display: list-item;
+        font-size: 16px;
+    }
+    
+    
+    .companyLogo{
+        padding-right: 8px;
+    }
+    
+    .contactInformation{
+        li {
+            list-style-type:none;
+        }
+    }
+}
+.loading{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}

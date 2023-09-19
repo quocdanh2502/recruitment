@@ -1,0 +1,16 @@
+.CandidateInterviewHistory{
+    margin: 1.5rem 02rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    .CandidateInterviewHistoryContent{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        .HistoryTable{ 
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid ;
+        }
+    }
+
+}

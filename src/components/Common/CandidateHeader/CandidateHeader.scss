@@ -1,0 +1,41 @@
+.CandidateHeader {
+  background-color: #141414;
+  padding-inline: 0px;
+  z-index: 1000;
+  max-height: 10vh;
+
+  .MyHeader {
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+    .sider {
+      background-color: #141414;
+
+      .icon {
+        color: #d9dadc;
+        cursor: unset;
+        &:hover {
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+    }
+    .content {
+      background-color: #141414;
+      .title {
+        color: #d9dadc;
+        margin: 0;
+        cursor: unset;
+        &:hover {
+          cursor: pointer;
+          color: #1ed760;
+        }
+      }
+    }
+
+    .ant-space-align-center {
+      justify-content: start !important;
+    }
+  }
+
+}
